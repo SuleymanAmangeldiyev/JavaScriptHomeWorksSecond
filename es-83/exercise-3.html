@@ -3,15 +3,15 @@
     <div id="container">
       <form>
         <div>
-          <label>First Name:</label>
+          <label id="Lfn">First Name:</label>
           <input type="text" class="form-input" id="firstName" value="Mario" />
         </div>
         <div>
-          <label>Last Name:</label>
+          <label id="Lln">Last Name:</label>
           <input type="text" class="form-input" id="lastName" value="Rossi" />
         </div>
         <div>
-          <label>Age:</label>
+          <label id="La">Age:</label>
           <input type="number" class="form-input" id="age" value="25" />
         </div>
       </form>
@@ -20,12 +20,16 @@
     <script>
       // code here
       const firstName = document.getElementById("firstName");
-      console.log(`First Name:${firstName.value}`);
+      const Lfn = document.getElementById("Lfn");
+      console.log(Lfn.value + " " + firstName.value);
 
       const lastName = document.getElementById("lastName");
-      console.log(`Last Name: ${lastName.value}`);
+      const Lln = document.getElementById("Lln");
+      console.log(Lln.value + "  " + lastName.value);
+      
       const age = document.getElementById("age");
-      console.log(`Last Name: ${age.value}`);
+      const La = document.getElementById("La");
+      console.log(La.value + " " + age.value);
     </script>
   </body>
 </html>
